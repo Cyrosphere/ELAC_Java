@@ -11,6 +11,7 @@ public class GameDriver{
     Scanner input = new Scanner(System.in); //initialize Scanner for user input
     int playerchoice = 0;
     String playername = "";
+    int nextphase = 0;
     //splash art
     
     //story begins
@@ -44,7 +45,9 @@ public class GameDriver{
     
     
     //find an exit. left
-    
+    while (nextphase == 0){
+      
+    }
     
     //choose a path
     
