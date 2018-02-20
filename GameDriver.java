@@ -21,6 +21,9 @@ public class GameDriver{
     System.out.println("Lying on the ground, you decide to do some thinking to figure out the current situation. \n");
     System.out.println("Can't seem to think straight, you start to ask yourself some questions.  \n \n");
     
+    System.out.println("Press \"ENTER\" to continue...");
+    input.nextLine();
+    
     System.out.println("1. Who am I?  \n");
     System.out.println("2. Where am I?  \n");
     System.out.println("(Enter a number) \n");
@@ -39,15 +42,16 @@ public class GameDriver{
         System.out.println("With your eyes wide open, you look around, trying to find something in the darkness.  \n");
       }
       else {
-        
+        System.out.println("\n 'DEAD'  \n");
+        return;
       }
     //ask player's name
     
     
     //find an exit. left
-    while (nextphase == 0){
+   // while (nextphase == 0){
       
-    }
+  //  }
     
     //choose a path
     
