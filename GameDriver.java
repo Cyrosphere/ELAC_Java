@@ -42,7 +42,7 @@ public class GameDriver{
         System.out.println("With your eyes wide open, you look around, trying to find something in the darkness.  \n");
       }
       else {
-        System.out.println("\n 'DEAD'  \n");
+        System.out.println("\n Your brain is in complete chaos. After a moment of dizziness, you fall back to unconsciousness.\n");
         return;
       }
     //ask player's name
