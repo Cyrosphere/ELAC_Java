@@ -13,10 +13,11 @@ public class GameDriver{
     //setting up random generator
     int minimum = 1;
     int maximum = 100;
-    int randomNum = minimum + (int)(Math.random() * maximum);
+    int randomWeapon = 0;
     
     int playerchoice = 0;
     String playername = "";
+    String weaponName = "";
     int nextphase = 0;//check if section 1 is complete
     int nameget = 0; //check if the player has answered a question in section 1
     int whereabout = 0;
@@ -88,7 +89,11 @@ public class GameDriver{
     System.out.println("\"Damn! What the...?\" \n");
     System.out.println("Your feet hit something hard and you fall to the ground. \n");
     System.out.println("Luckily you did not get hurt. It appears you are wearing some sort of shoes. You did not realize that when you woke up. \n ");
-    System.out.println("Searching the ground, you find that what you just ran into is actually a metal club. \n");
+    
+    randomWeapon = 1 + (int)(Math.random() * 3);
+    
+      weaponName = weaponloot(randomWeapon);
+    System.out.println("Searching the ground, you find that what you just ran into is actually a " + weaponName +"\n");
     
     System.out.println("Do you want to pick it up? \n");
      //                 
@@ -130,4 +135,14 @@ public class GameDriver{
    Scanner scanner = new Scanner(System.in);
    scanner.nextLine();
 }
+  public static String weaponloot(int Weaponindex){
+    if (Weaponindex == 1)
+      return "Metal club";
+    else if (Weaponindex == 2)
+      return "Silver knife";
+    else if (Weaponindex == 3)
+      return "Steel Sword";
+    else 
+      return "Rock";
+  }
 }
