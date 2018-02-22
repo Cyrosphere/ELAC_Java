@@ -27,7 +27,7 @@ public class GameDriver{
     System.out.println("You wake up on a hard and cold surface. Opening your eyes, you can see nothing but absolute darkness. \n");
     System.out.println("You try to get up, but your head suddenly hurts so much that you almost pass out. \n");
     System.out.println("Lying on the ground, you decide to do some thinking to figure out the current situation. \n");
-    System.out.println("Can't seem to think straight, you start to ask yourself some questions.  \n \n");
+    System.out.println("Can't seem to think straight, you start to ask yourself some questions.  \n");
     
     promptEnterKey();
     
@@ -44,18 +44,21 @@ public class GameDriver{
     playerchoice = input.nextInt(); //get the question number from the player
     
       if (playerchoice == 1){
-        System.out.println("\n 'WHO...AM...I...?'  \n");
+        System.out.println("\n \"WHO...AM...I...?\"  \n");
         System.out.println("You cannot recall anything about your past, but you do remember that your name is...  \n");
+        System.out.println("(Enter name)  \n");
         playername = input.next();  //get the player's name
-        System.out.println("\n'" + playername + "...'  \n");
-        System.out.println("It seems that your name is " + playername + ", at least that sounds familiar. \n");
+        System.out.println("\n\"" + playername + "...\"  \n");
+        System.out.println("It seems that your name is \"" + playername + "\", at least that sounds familiar. \n");
         nameget = 1;
         promptEnterKey();
       }
       else if (playerchoice == 2){
-        System.out.println("\n 'WHERE...THE HELL?'  \n");
+        System.out.println("\n \"WHERE...THE HELL?\"  \n");
         System.out.println("With your eyes wide open, you look around, trying to find something in the darkness.  \n");
-        System.out.println("Can't rely on your eyes, you   \n");
+        System.out.println("Can't rely on your eyes, you carefully search your surrounding with your hands.  \n");
+        System.out.println("You can feel that you are lying on a rough, stone floor. The stone floor is cold and wet.  \n");
+        System.out.println("Raise your hands up, you try to find if there is a wall or ceiling. But suddenly you feel a flow of air!  \n");
         whereabout = 1;
         promptEnterKey();
       }
@@ -68,14 +71,38 @@ public class GameDriver{
      }
     }
     
-    //ask player's name
+    System.out.println("Your brain is clearer by now. Your name is \"" + playername + "\". \n");
+    System.out.println("Judging by the temperature and humidity, this place might be an underground cave or something.  \n");
+    System.out.println("If you can feel wind, there must be a way out! \n");
     
+    promptEnterKey();
+    
+    System.out.println("Take a deep breath, you stand up. \n");
+    System.out.println("The airflow is not very strong, but you can can feel that the wind comes from straight ahead. \n");
+    System.out.println("With your hands in front of yourself, you slowly follow the wind. \n");
+    System.out.println("As you walk, you can feel the wind is getting stronger. So you speed up your pace. Then suddenly... \n");
+    System.out.println("\"DANG~!\" \n");
+    
+    promptEnterKey();
+    
+    System.out.println("\"Damn! What the...?\" \n");
+    System.out.println("Your feet hit something hard and you fall to the ground. \n");
+    System.out.println("Luckily you did not get hurt. It appears you are wearing some sort of shoes. You did not realize that when you woke up. \n ");
+    System.out.println("Searching the ground, you find that what you just ran into is actually a metal club. \n");
+    
+    System.out.println("Do you want to pick it up? \n");
+     //                 
+    
+    
+    
+    
+   
    
     
     
-    while (monsterhp > 0 && playerhp > 0){ //BATTLE!
+    //while (monsterhp > 0 && playerhp > 0){ //BATTLE!
       
-    }
+    //}
     
     
     
