@@ -9,9 +9,12 @@ public class GameDriver{
     
     //variable declarations with default values
     Scanner input = new Scanner(System.in); //initialize Scanner for user input
+    
     int playerchoice = 0;
     String playername = "";
-    int nextphase = 0;
+    int nextphase = 0;//check if section 1 is complete
+    int nameget = 0; //check if the player has answered a question in section 1
+    int whereabout = 0;
     //splash art
     
     //story begins
@@ -21,11 +24,16 @@ public class GameDriver{
     System.out.println("Lying on the ground, you decide to do some thinking to figure out the current situation. \n");
     System.out.println("Can't seem to think straight, you start to ask yourself some questions.  \n \n");
     
-    System.out.println("Press \"ENTER\" to continue...");
-    input.nextLine();
+    promptEnterKey();
     
+    while (nextphase == 0){
+    
+      if (nameget == 0 ){
     System.out.println("1. Who am I?  \n");
+      }
+      if (whereabout == 0){
     System.out.println("2. Where am I?  \n");
+      }
     System.out.println("(Enter a number) \n");
     
     playerchoice = input.nextInt(); //get the question number from the player
@@ -36,15 +44,24 @@ public class GameDriver{
         playername = input.next();  //get the player's name
         System.out.println("\n'" + playername + "'...  \n");
         System.out.println("It seems that your name is " + playername + ", at least that sounds familiar. \n");
+        nameget = 1;
+        promptEnterKey();
       }
       else if (playerchoice == 2){
         System.out.println("\n 'WHERE...THE HELL?'  \n");
         System.out.println("With your eyes wide open, you look around, trying to find something in the darkness.  \n");
+        System.out.println("Can't rely on your eyes, you   \n");
+        whereabout = 1;
+        promptEnterKey();
       }
       else {
         System.out.println("\n Your brain is in complete chaos. After a moment of dizziness, you fall back to unconsciousness.\n");
         return;
       }
+     if (nameget == 1 && whereabout == 1){
+       nextphase = 1;
+     }
+    }
     //ask player's name
     
     
@@ -66,4 +83,9 @@ public class GameDriver{
     //
     
   }
+  public static void promptEnterKey(){
+   System.out.println("Press \"ENTER\" to continue...");
+   Scanner scanner = new Scanner(System.in);
+   scanner.nextLine();
+}
 }
