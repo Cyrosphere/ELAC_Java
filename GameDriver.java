@@ -10,6 +10,11 @@ public class GameDriver{
     //variable declarations with default values
     Scanner input = new Scanner(System.in); //initialize Scanner for user input
     
+    //setting up random generator
+    int minimum = 1;
+    int maximum = 100;
+    int randomNum = minimum + (int)(Math.random() * maximum);
+    
     int playerchoice = 0;
     String playername = "";
     int nextphase = 0;//check if section 1 is complete
@@ -29,12 +34,12 @@ public class GameDriver{
     while (nextphase == 0){
     
       if (nameget == 0 ){
-    System.out.println("1. Who am I?  \n");
+          System.out.println("1. Who am I?  \n");
       }
       if (whereabout == 0){
-    System.out.println("2. Where am I?  \n");
+          System.out.println("2. Where am I?  \n");
       }
-    System.out.println("(Enter a number) \n");
+          System.out.println("(Enter a number) \n");
     
     playerchoice = input.nextInt(); //get the question number from the player
     
@@ -42,7 +47,7 @@ public class GameDriver{
         System.out.println("\n 'WHO...AM...I...?'  \n");
         System.out.println("You cannot recall anything about your past, but you do remember that your name is...  \n");
         playername = input.next();  //get the player's name
-        System.out.println("\n'" + playername + "'...  \n");
+        System.out.println("\n'" + playername + "...'  \n");
         System.out.println("It seems that your name is " + playername + ", at least that sounds familiar. \n");
         nameget = 1;
         promptEnterKey();
@@ -62,7 +67,17 @@ public class GameDriver{
        nextphase = 1;
      }
     }
+    
     //ask player's name
+    
+   
+    
+    
+    while (monsterhp > 0 && playerhp > 0){ //BATTLE!
+      
+    }
+    
+    
     
     
     //find an exit. left
