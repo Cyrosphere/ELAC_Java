@@ -287,24 +287,6 @@ public class GameDriver{
     }
     
     
-    
-    //find an exit. left
-   // while (nextphase == 0){
-      
-  //  }
-    
-    //choose a path
-    
-    
-    //path 1 - swords
-    //path 2 - armor
-    //path 3 - boss
-    
-    
-    //face the boss
-    //decide your destiny
-    //
-    
   }
   public static void promptEnterKey(){
    System.out.println("continue...");
