@@ -1,4 +1,5 @@
 /*
+LAB 6
 Test create, edit, overwrite an array
 and print
 */
