@@ -19,7 +19,7 @@ public class GameDriver{
     
     int damage = 0;
     
-    int monsterhp = 50;
+    int monsterhp;
     int playerhp = 50;
     
     int playerchoice = 0;
@@ -261,6 +261,12 @@ public class GameDriver{
     System.out.println("Through the gate, you enter a hall with many torches on the wall. \n");
     System.out.println("A monster is sleeping in the middle of the hall, your footsteps wake it up! The monster roars and leaps at you! \n");
     
+    int randomhp = -50 + (int)(Math.random() * 100);
+    int randomagi = -10 + (int)(Math.random() * 5);
+    int randomatk = 0 + (int)(Math.random() * 30);      
+    armored_unit armor = new armored_unit(randomhp, randomagi, randomatk);
+    monsterhp = armor.hp_get();
+    monsteratk = armor.atk_get();
     promptEnterKey();
     
     
@@ -270,6 +276,7 @@ public class GameDriver{
       System.out.println("You dealt " + damage +" points of damage.\n");
       monsterhp = monsterhp - damage;
       damage = 5 + (int)(Math.random() * 20);
+      damage = damage + monsteratk;
       System.out.println("The monster attacks you and dealt " + damage + "points of damage. \n");
       playerhp = playerhp - damage;
       promptEnterKey();
