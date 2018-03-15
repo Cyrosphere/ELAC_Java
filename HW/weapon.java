@@ -15,22 +15,26 @@ public class weapon{
 
   
   public weapon(String name){
-    this.hp = hp + base_hp;
-    this.agi = agi + base_agi;
-    this.atk = atk + base_atk;    
+    this.name = name;
   }
-  public int hp_get(){
-    return hp;
-  }  
-  public int agi_get(){
-    return agi;
-  }  
-  public int atk_get(){
-    return atk;
-  }  
-  public void attr_modify(int hp_mod, int agi_mod, int atk_mod){
-    hp = hp + hp_mod;
-    agi = agi + agi_mod;
-    atk = atk + atk_mod;
+  public void bluntdmg(int bluntdmg){
+    blunt_damage = blunt_damage + bluntdmg;
   }
+  public void steeldmg(int steeldmg){
+    steel_damage = steel_damage + steeldmg;
+  }
+  public void silverdmg(int silverdmg){
+    silver_damage = silver_damage + silverdmg;
+  }
+  public void firedmg(int firedmg){
+    fire_damage = fire_damage + firedmg;
+  }
+  public void holydmg(int holydmg){
+    holy_damage = holy_damage + holydmg;
+  }
+  public void thunderdmg(int thunderdmg){
+    thunder_damage = thunder_damage + thunderdmg;
+  }
+
+
 }

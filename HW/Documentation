@@ -1,13 +1,18 @@
+Summary:
+  Game is about the main character exploring a dungeon full of monsters and treasures. Player needs to collect certain items to defeat certain monsters. 
+  Player cannot hold many items on him, so the player will need to make choices, go back to a previous location to retrive certain items.
+  Defeating monsters will unlock new areas. Some items are only avaliable in the new areas.
+  
 List of objects
 
-Weapon // silver steel blunt
-Equipment
-Psi// thunder fire holy
-Potion
-Key
+  Weapon // silver steel blunt
+  Equipment
+  Elemental// thunder fire holy
+  Potion
+  Key
 
-Ghost
-Zombie
-MovingArmor
-Demon
-Gargoyle
+  Ghost
+  Zombie
+  MovingArmor
+  Demon
+  Gargoyle 
