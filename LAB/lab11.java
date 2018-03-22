@@ -31,7 +31,7 @@ public class lab11{
     //System.out.println(sort_array.toString());
     
     if (isSorted(sort_array) == true){
-      System.out.println("The list is sorted.\n");
+      System.out.println("The list is already sorted.\n");
     }
     else
       System.out.println("The list is not sorted.\n");
