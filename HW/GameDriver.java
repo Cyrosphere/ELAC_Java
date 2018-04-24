@@ -20,6 +20,7 @@ public class GameDriver{
     int damage = 0;
     
     int monsterhp;
+    int monsteratk;
     int playerhp = 50;
     
     int playerchoice = 0;
@@ -31,13 +32,8 @@ public class GameDriver{
     int nameget = 0; //check if the player has answered a question in section 1
     int whereabout = 0;
     //splash art
-        System.out.println(" ______   _______  _______  _______  \n"
-                         + "|      | |       ||       ||       | \n"
-                         + "|  _    ||    ___||    ___||    _  | \n"
-                         + "| | |   ||   |___ |   |___ |   |_| | \n"
-                         + "| |_|   ||    ___||    ___||    ___| \n"
-                         + "|       ||   |___ |   |___ |   |     \n"
-                         + "|______| |_______||_______||___|     \n");
+    Utility.ReadFile("StartSplash.txt");
+
 
     //story begins
     //wake up in a doungeon
@@ -89,6 +85,8 @@ public class GameDriver{
        nextphase = 1;
      }
     }
+    
+    Utility.WriteFile("Name.txt", playername);
     
     nextphase = 0;// reset the section check variable
     System.out.println("Your brain is clearer by now. Your name is \"" + playername + "\". \n");
