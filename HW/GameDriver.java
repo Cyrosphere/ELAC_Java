@@ -37,11 +37,9 @@ public class GameDriver{
 
     //story begins
     //wake up in a doungeon
-    System.out.println("You wake up on a hard and cold surface. Opening your eyes, you can see nothing but absolute darkness. \n");
-    System.out.println("You try to get up, but your head suddenly hurts so much that you almost pass out. \n");
-    System.out.println("Lying on the ground, you decide to do some thinking to figure out the current situation. \n");
-    System.out.println("Can't seem to think straight, you start to ask yourself some questions.  \n");
-    System.out.println("Press \"ENTER\" to ");
+    
+    Utility.ReadFile("Prologue.txt");
+    //
     promptEnterKey();
     
     //first section WAKE UP
@@ -77,9 +75,9 @@ public class GameDriver{
         promptEnterKey();
       }
       else {
-        System.out.println("\n Your brain is in complete chaos. After a moment of dizziness, you fall back to unconsciousness.\n");
-        Gameover();
-        return;
+        System.out.println("\n Your brain is in complete chaos. After taking a deep breath, you try to ask some questions again. \n");
+        //Gameover();
+        //return;
       }
      if (nameget == 1 && whereabout == 1){
        nextphase = 1;
@@ -87,20 +85,14 @@ public class GameDriver{
     }
     
     Utility.WriteFile("Name.txt", playername);
+    player.setup(0,0,0,playername);
     
     nextphase = 0;// reset the section check variable
     System.out.println("Your brain is clearer by now. Your name is \"" + playername + "\". \n");
-    System.out.println("Judging by the temperature and humidity, this place might be an underground cave or something.  \n");
-    System.out.println("If you can feel wind, there must be a way out! \n");
     /* Section 1 end */
     promptEnterKey();
-    /* Interlude */
-    System.out.println("Take a deep breath, you stand up. \n");
-    System.out.println("The airflow is not very strong, but you can can feel that the wind comes from straight ahead. \n");
-    System.out.println("With your hands in front of yourself, you slowly follow the wind. \n");
-    System.out.println("As you walk, you can feel the wind is getting stronger. So you speed up your pace. Then suddenly... \n");
-    System.out.println("\"DANG~!\" \n");
-    
+    /* Interlude 1*/
+    Utility.ReadFile("interlude1.txt");
     promptEnterKey();
     
     System.out.println("\"Damn! What the...?\" \n");
