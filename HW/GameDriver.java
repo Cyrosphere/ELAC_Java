@@ -122,17 +122,8 @@ public class GameDriver{
     
     nextphase = 0;// reset the section check variable
     // Interlude 2
-    System.out.println("On your hands and feet, you slowly crawl up the stairs. \n");
-    System.out.println("Your can feel the stairs are getting narrower and steeper. Just before you give up climbing, you eyes catch something. \n");
-    System.out.println("It's light! Although dim and small, you can clearly see light up ahead!  \n ");
-    
+    Utility.ReadFile("interlude2.txt");
     promptEnterKey();
-    
-    System.out.println("It didn't take long before you reach the top of the stairway.  \n ");
-    System.out.println("The stairs lead you to a stone corridor. Several lamps are hanging on the ceiling. That is the light source you just saw.  \n ");
-    System.out.println("The lamps are dim and the corridor is long, you cannot see the where it leads to. \n ");
-    
-    System.out.println("Carefully advancing along the corridor, you find that there are something hanging on the wall as well. \n ");
     
     //Interlude 2 end
     
