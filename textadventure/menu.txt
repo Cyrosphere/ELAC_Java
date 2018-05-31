@@ -1,0 +1,9 @@
+What do you want to do?
+1. Go to other layer
+2. Go to a room
+3. Check status
+4. Check map
+5. Change weapon
+6. Change element
+7. Combine fragments
+8. Cheat(Get all fragments)

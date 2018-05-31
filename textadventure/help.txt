@@ -1,0 +1,17 @@
+The monster dropped a strange stone, you picked it up.
+Sunddenly you heard a voice inside your head.
+
+
+"The stone will teleport you to other layers.
+Seven fragments, seven guardians
+With all the fragments, the stone will send you back home.
+
+Creatures have weaknesses, choose your power wisely."
+
+// Vampire-silver fire
+   Ghost-silver holy
+   Zombie-blunt fire
+   Demon-steel holy
+   Werewolf-silver fire
+   Golem -blunt thunder
+   Dragon-steel thunder

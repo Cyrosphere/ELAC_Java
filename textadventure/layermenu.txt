@@ -1,0 +1,9 @@
+Which layer do you want to go?
+1.Blood
+2.Soul
+3.Flesh
+4.Sin
+5.Curse
+6.Might
+7.Flame
+8.Surface
